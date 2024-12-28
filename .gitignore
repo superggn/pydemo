@@ -1,0 +1,77 @@
+# Python相关
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# Virtual Environment
+venv/
+.env/
+env/
+.venv/
+ENV/
+
+# PyCharm相关
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Linux
+*.swp
+*.swo
+*.sw~
+
+# Docker
+*.dockerfile
+docker-compose.override.yml
+
+# pytest
+.cache/
+.pytest_cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+*.cover
+coverage.xml
+
+# MyPy
+.mypy_cache/
+
+# Pyre
+.pyre/
+
+# PDM (Python Dependency Manager)
+__pypackages__/
+
+# Poetry
+poetry.lock
+
+# Logs and debugging
+debug.log
+
+# System files
+.vscode/
+*.bak
+*.tmp
+*.old
+*.orig
+
