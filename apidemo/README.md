@@ -10,6 +10,7 @@ django openapi3 最小实现
 
 ```
 django-admin startproject apiDemo
+python manage.py startapp demo
 ```
 
 不用改 db settings， 默认的 sqlite 就能用
