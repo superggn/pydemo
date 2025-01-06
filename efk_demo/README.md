@@ -37,7 +37,7 @@ USER fluent
 ```
 
 ```
-docker build -t cf:1.17 .
+docker build -t cf:1.17-amd .
 ```
 
 ##### 跑 fluentd 容器
@@ -50,7 +50,7 @@ docker run -d \
   -v $(pwd):/fluentd/etc \
   -v $(pwd)/myapp.log:/var/log/myapp.log \
   -v $(pwd)/myapp.pos:/var/log/myapp.pos \
-  cf:1.17 \
+  cf:1.17-amd \
   -c /fluentd/etc/fluent.conf
 
 ```
@@ -98,4 +98,5 @@ http://127.0.0.1:5601/
   - fluentd 配置 ssl_verify false
   - fluentd 里设置的 host 不对
     - 去 docker inspect mynetwork 看一下容器对应的 ipv4 地址多少
-
+- append 了日志为什么 kibana 里过好久才能看到？
+  - fluentd 的默认刷新时间很久， 得在 fluent.conf 里把 buffer 时间改一下
